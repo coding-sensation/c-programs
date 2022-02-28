@@ -1,22 +1,18 @@
-// This C Program calculates the square root
+// This C Program calculates the square root of a number.
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
 
 int main() {
+	int number;
+	printf("Enter an integer: ");
 
 	// Takes the input from the user
-	float number;
-	printf("Enter a number: ");
-	scanf("%f", &number);
+	scanf("%d", &number);
 
-	// The square root of the given number
-	float square_root = sqrt(number);
-
-	printf("the square root of %0.3f is %0.3f", number, square_root);
+	printf("The square root of %d is %0.3f.\n", number, sqrt(number));
 }
 
 // OUTPUT EXAMPLE
-// Enter a number: 81
-// The square root of 81.000 is 9.000
+// Enter an integer: 81
+// The square root of 81 is 9.000.

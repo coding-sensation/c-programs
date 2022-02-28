@@ -1,32 +1,22 @@
-// This C Program swaps two numbers
+// This C Program swaps two numbers.
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
-int main(){
+int main() {
+    int x, y, tmp;
 
-int x, y, tmp;
+    printf("Enter a value for x and y: ");
+    scanf("%d %d", &x, &y);
 
-printf("Enter a value for x: ");
-scanf("%d", &x);
-printf("Enter a value for y: ");
-scanf("%d", &y);
+    // Swaps both numbers
+    tmp = x;
+    x = y;
+    y = tmp;
 
-
-// Swap the two numbers
-tmp = x;
-x = y;
-y = tmp;
-
-// Display the numbers after swapping them 
-printf("x = %d. \n", x);
-printf("y = %d. \n", y);
-
+    printf("x = %d.\ny = %d.\n", x, y);
 }
 
 // OUTPUT EXAMPLE
-// Enter a value for x: 23
-// Enter a value for y: 7
+// Enter a value for x and y: 23 7
 // x = 7.
 // y = 23.

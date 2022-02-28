@@ -1,16 +1,16 @@
-// This C Program swaps two numbers
+// This C Program generates a random integer between 0 and 9.
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
+#include <time.h>
 
 int main() {
+	srand(time(NULL));
+	int randomInteger;
 
-	int random;
-	random = rand() % 10;
-	printf("Random Integer: %d\n", random);
-	
+	randomInteger = rand() % 10;
+	printf("The random integer is %d.\n", randomInteger);
 }
 
-// OUTPUT EXAMPLE
-// Random Integer: 7
+// OUTPUT
+// The random integer is 7.
